@@ -6,6 +6,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Link from '@mui/material/Link';
 import Container from '@mui/material/Container';
+import { Layoutt } from "./component/Layoutt";
+
 
 
 const papers = {
@@ -134,6 +136,8 @@ const papers = {
 
 export default function Research() {
   return (
+    <>
+    <Layoutt className="pt-11">
     <div className="  flex flex-col items-center self-center">
       <Head>
         <title>Research</title>
@@ -174,5 +178,18 @@ export default function Research() {
         </List>
       </Container>
     </div>
+    </Layoutt>
+    </>
+    
   );
 }
+
+
+
+
+
+
+
+
+
+
