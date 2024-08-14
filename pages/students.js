@@ -1,90 +1,162 @@
-import React from "react";
-import { AnimationT } from "./component/AnimationT";
+import React, { useState } from "react";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
 
 const scholar = {
-  "student1": {
-    "name": "Pratik Chowdhury",
-    "status": "PhD(Ongoing)",
-    "picture": "https://nitdgp.ac.in/uploads/69e7d22e20def0bf547f86e679fb406f.jpeg"
+  "PhD": {
+    "student1": {
+      "name": "Pratik Chowdhury",
+      "status": "PhD(Ongoing)",
+      "picture": "https://nitdgp.ac.in/uploads/69e7d22e20def0bf547f86e679fb406f.jpeg",
+      "description":"heheheheheehehehheehehhehehehehehhehehehehehehe"
+    },
+    "student2": {
+      "name": "Anil Bikash Chowdhury",
+      "status": "PhD (Part Time) (Completed)",
+      "picture": "https://nitdgp.ac.in/uploads/0612d2c218361907e5247f2c18e95ac1.jpg",
+      "description":"I dont know you"
+    },
+    "student3": {
+      "name": "Anjan Bandyopadhyay",
+      "status": "PhD (Completed)",
+      "picture": "https://nitdgp.ac.in/uploads/924ab812a3533469c5f6b283580d49bf.jpg",
+      "description":""
+    },
+    "student4": {
+      "name": "Vikash Kumar Singh",
+      "status": "PhD (Completed)",
+      "picture": "https://nitdgp.ac.in/uploads/333cdffd13d47680a84dc14836cea48e.jpg",
+      "description":"kumar... vikas kumar"
+    },
+    "student5": {
+      "name": "Naren Debnath",
+      "status": "PhD(Ongoing)",
+      "picture": "https://nitdgp.ac.in/uploads/cb63d079c9c50625a71deaf3a47affd5.jpg",
+      "description":"happy birthday to you"
+    },
   },
-  "student2": {
-    "name": "Anil Bikash Chowdhury",
-    "status": "PhD (Part Time) (Completed)",
-    "picture": "https://nitdgp.ac.in/uploads/0612d2c218361907e5247f2c18e95ac1.jpg"
-  },
-  "student3": {
-    "name": "Anjan Bandyopadhyay",
-    "status": "PhD (Completed)",
-    "picture": "https://nitdgp.ac.in/uploads/924ab812a3533469c5f6b283580d49bf.jpg"
-  },
-  "student4": {
-    "name": "Vikash Kumar Singh",
-    "status": "PhD (Completed)",
-    "picture": "https://nitdgp.ac.in/uploads/333cdffd13d47680a84dc14836cea48e.jpg"
-  },
-  "student5": {
-    "name": "Naren Debnath",
-    "status": "PhD(Ongoing)",
-    "picture": "https://nitdgp.ac.in/uploads/cb63d079c9c50625a71deaf3a47affd5.jpg"
-  },
+  "MTech": {},
+  "BTech": {}
 };
 
 export default function Students() {
+  const [tabValue, setTabValue] = useState("PhD");
+  const [open, setOpen] = useState(false);
+  const [selectedStudent, setSelectedStudent] = useState(null);
+
+  const handleChange = (event, newValue) => {
+    setTabValue(newValue);
+  };
+
+  const handleClickOpen = (student) => {
+    setSelectedStudent(student);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setSelectedStudent(null);
+  };
+
   return (
-    <div className="pt-2 w-full flex flex-col items-center self-center font-sans">
-      <AnimationT text='Students' />
-      <Box 
-        display="flex" 
-        flexWrap="wrap" 
-        justifyContent="center" 
-        alignItems="center" 
-        gap={3} 
-        p={2}
-      >
-        {Object.keys(scholar).map((key) => (
-          <Card
-            key={key}
+    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Box sx={{ mt: 4, p: 2, border: '1px solid #ccc', borderRadius: 2, boxShadow: 1, flexGrow: 1, overflow: 'auto' }}>
+        <Tabs value={tabValue} onChange={handleChange} centered>
+          <Tab 
+            label="PhD" 
+            value="PhD" 
             sx={{ 
-              width: 400, 
-              height: 400, 
-              backgroundColor: '#f5f5f5', 
-              transition: 'transform 0.3s ease-in-out',
-              boxShadow: 3,
-              '&:hover': {
-                transform: 'scale(1.05)',
-                boxShadow: 6,
+              "&:hover": {
+                color: '#1976d2',  
+                backgroundColor: '#e3f2fd',  
               },
-              display: 'flex',
-              flexDirection: 'column'
             }}
-            variant="outlined"
-          >
-            <CardMedia
-              component="img"
-              image={scholar[key].picture}
-              alt={scholar[key].name}
-              sx={{ 
-                height: 200, 
-                width: '100%', 
-                objectFit: 'contain' // Changed from 'cover' to 'contain'
-              }}
-            />
-            <CardContent sx={{ flex: 1 }}>
-              <Typography gutterBottom variant="h5" component="div">
-                {scholar[key].name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {scholar[key].status}
-              </Typography>
-            </CardContent>
-          </Card>
-        ))}
+          />
+          <Tab 
+            label="MTech" 
+            value="MTech" 
+            sx={{ 
+              "&:hover": {
+                color: '#1976d2',  
+                backgroundColor: '#e3f2fd',  
+              },
+            }}
+          />
+          <Tab 
+            label="BTech" 
+            value="BTech" 
+            sx={{ 
+              "&:hover": {
+                color: '#1976d2',  
+                backgroundColor: '#e3f2fd',  
+              },
+            }}
+          />
+        </Tabs>
+
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2, p: 2 }}>
+          {Object.keys(scholar[tabValue]).length === 0 ? (
+            <Typography variant="h6" color="text.secondary">No content for now</Typography>
+          ) : (
+            Object.values(scholar[tabValue]).map((student, index) => (
+              <Card 
+                key={index} 
+                sx={{ display: 'flex', width: '100%', maxWidth: 500, p: 1, cursor: 'pointer' }}
+                onClick={() => handleClickOpen(student)}
+              >
+                <Avatar
+                  alt={student.name}
+                  src={student.picture}
+                  sx={{ width: 80, height: 80, marginRight: 2 }}
+                />
+                <CardContent>
+                  <Typography variant="h6">{student.name}</Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {student.status}
+                  </Typography>
+                </CardContent>
+              </Card>
+            ))
+          )}
+        </Box>
+
+        <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
+          <DialogContent sx={{ minHeight: 500, maxHeight: '80vh', overflow: 'auto' }}>
+            {selectedStudent && (
+              <Card sx={{ p: 2 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                  <Avatar
+                    alt={selectedStudent.name}
+                    src={selectedStudent.picture}
+                    sx={{ width: 100, height: 100, marginRight: 2 }}
+                  />
+                  <Box>
+                    <Typography variant="h5">
+                      {selectedStudent.name}
+                    </Typography>
+                    <Typography variant="subtitle1" color="text.secondary">
+                      {selectedStudent.status}
+                    </Typography>
+                  </Box>
+                </Box>
+                {selectedStudent.description && (
+                  <Typography variant="body1" sx={{ mt: 2 }}>
+                    {selectedStudent.description}
+                  </Typography>
+                )}
+              </Card>
+            )}
+          </DialogContent>
+        </Dialog>
       </Box>
-    </div>
+
+    </Box>
   );
 }
