@@ -1,13 +1,6 @@
 import React from 'react'
 
-
-
-
-
-
-
-
-export const AnimationT = ({text, className=""}) => {
+ const AnimationT = ({text, className=""}) => {
     return (
         <div className='w-full mx-auto py-2 flex items-center justify-center text-center
         overflow-hidden'>
@@ -26,3 +19,6 @@ export const AnimationT = ({text, className=""}) => {
         </div>
     )
     }
+
+export default AnimationT;
+    

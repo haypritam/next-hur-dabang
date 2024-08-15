@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Layoutt = ({children, className=''}) => {
+const Layoutt = ({children, className=''}) => {
   return (
     <div className={`w-full h-full inline-block z-0 bg-light p-32  ${className}`}>{children}</div>
   )
 }
+
+export default Layoutt;

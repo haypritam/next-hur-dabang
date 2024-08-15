@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import React from 'react'
-import { Logo } from './Logo'
 import { useRouter } from 'next/router'
 
 const CustomLink = ({href, title, className=""}) =>{
@@ -21,7 +20,7 @@ const CustomLink = ({href, title, className=""}) =>{
 }
 
 
-export const NavBar = () => {
+const NavBar = () => {
   return (
    <header
    className='w-full px-32 py-9 font-semibold flex items-center justify-between '
@@ -40,3 +39,5 @@ export const NavBar = () => {
    </header>
   )
 }
+
+export default NavBar

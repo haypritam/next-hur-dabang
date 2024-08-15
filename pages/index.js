@@ -1,8 +1,8 @@
-import { Layoutt } from "./components/Layoutt";
+import Layoutt from "./components/Layoutt";
 import Head from "next/head";
 import Image from "next/image";
 import sir from "../public/images/profile/sir.jpg"
-import { AnimationT } from "./components/AnimationT";
+import AnimationT from './components/AnimationT';
 
 
 export default function Home() {

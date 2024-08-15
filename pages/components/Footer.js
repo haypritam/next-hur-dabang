@@ -1,8 +1,7 @@
-import Link from 'next/link'
 import React from 'react'
-import {Layoutt} from "./Layoutt"
+import Layoutt from "./Layoutt"
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className='w-full border-t-2 border-solid border-dark
      font-medium text-lg'>
@@ -16,3 +15,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer;
