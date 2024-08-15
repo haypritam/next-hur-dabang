@@ -1,5 +1,5 @@
 import React from "react"
-import { AnimationT } from "./component/AnimationT"
+import { AnimationT } from "./components/AnimationT"
 
 
 

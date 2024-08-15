@@ -1,11 +1,11 @@
 import React from "react"
 import Head from "next/head"
 import Image from "next/image";
-import { AnimationT } from "./component/AnimationT"
-import { Layoutt } from "./component/Layoutt"
+import { AnimationT } from "./components/AnimationT"
+import { Layoutt } from "./components/Layoutt"
 import sir from "../public/images/profile/sir.jpg"
-import { Researchint } from "./component/Researchint";
-import { Experiance } from "./component/Experiance";
+import { Researchint } from "./components/Researchint";
+import { Experiance } from "./components/Experiance";
 
 
 

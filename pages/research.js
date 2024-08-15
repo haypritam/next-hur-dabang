@@ -1,12 +1,12 @@
 import React from "react";
-import { AnimationT } from "./component/AnimationT";
+import { AnimationT } from "./components/AnimationT";
 import Head from "next/head";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Link from '@mui/material/Link';
 import Container from '@mui/material/Container';
-import { Layoutt } from "./component/Layoutt";
+import { Layoutt } from "./components/Layoutt";
 
 
 
