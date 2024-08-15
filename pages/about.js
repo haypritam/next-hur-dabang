@@ -2,8 +2,6 @@ import React from "react"
 import Head from "next/head"
 import Image from "next/image";
 import AnimationT from './components/AnimationT';
-import Layoutt from "./components/Layoutt"
-import sir from "../public/images/profile/sir.jpg"
 
 
 
