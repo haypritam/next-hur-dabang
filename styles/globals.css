@@ -20,11 +20,11 @@
 html, body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 body {
-    font-family: var(--font-mont); /* Ensure body uses the Montserrat font */
+    font-family: var(--font-mont);
+    /* background-color: #dddbd6; */
 }
-
  

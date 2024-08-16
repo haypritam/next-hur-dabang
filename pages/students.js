@@ -122,17 +122,17 @@ export default function Students() {
                 sx={{
                   display: 'flex',
                   width: '100%',
-                  maxWidth: 500,
+                  maxWidth: 800,
                   p: 1,
                   cursor: 'pointer',
-                  backgroundColor: '#f5f5f5',
+                  backgroundColor: '#dddbd6',
                   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                   '&:hover': {
                     backgroundColor: '#e0f2e9', // Light green shade
                     transform: 'scale(1.02)',
                     transition: 'transform 0.2s',
                   },
-                  height: 100,
+                  height: 80,
                 }}
                 onClick={() => handleClickOpen(student)}
               >
