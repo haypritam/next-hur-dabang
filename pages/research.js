@@ -140,10 +140,10 @@ export default function Research() {
     <Layoutt className="pt-11">
     <div className="  flex flex-col items-center self-center">
       <Head>
-        <title>Research</title>
+        <title>Publications</title>
         <meta name="description" content="any description" />
       </Head>
-      <AnimationT text='Research' />
+      <AnimationT text='Publications' className=" font-titleFont"/>
       <Container>
         <List>
           {Object.keys(papers).map((key) => (
