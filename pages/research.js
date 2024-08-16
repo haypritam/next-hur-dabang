@@ -145,20 +145,20 @@ export default function Research() {
       </Head>
       <AnimationT text='Publications' className=" font-titleFont"/>
       <Container>
-        <List>
+        <List className=" font-titleFont">
           {Object.keys(papers).map((key) => (
             <ListItem
               key={key}
               sx={{
                 margin: '8px 0',
                 padding: '16px',
-                backgroundColor: '#f0f0f0',  // Light grey background
-                color: '#333',  // Dark grey text
+                backgroundColor: '#dddbd6', 
+                color: '#333',  
                 borderRadius: '8px',
                 transition: 'transform 0.2s ease-in-out, background-color 0.2s ease-in-out',
                 '&:hover': {
                   transform: 'scale(1.05)',
-                  backgroundColor: '#e0e0e0',  // Slightly darker grey on hover
+                  backgroundColor: '#e0e0e0',  
                 },
               }}
             >
