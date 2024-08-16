@@ -28,17 +28,16 @@ export default function Home() {
                <h1 className=" font-titleFont text-4xl ">Associate Professor</h1>
                <p className=" font-titleFont text-xl">sajal[at]cse[dot]nitdgp[dot]ac[dot]in</p>
                
-               {/* Add the icons below the text animations */}
                <div className="flex gap-6 mt-4">
-                 <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className="bannerIcon">
+                 <a href="https://scholar.google.com/citations?user=SahywBUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="bannerIcon">
                    <SiGooglescholar size={40} className="text-[#4285F4]" />
                  </a>
  
-                 <a href="https://dblp.org" target="_blank" rel="noopener noreferrer" className="bannerIcon">
+                 <a href="https://dblp.org/pid/21/9562.html" target="_blank" rel="noopener noreferrer" className="bannerIcon">
                    <SiDblp size={40} className="dblp-half-blue-yellow" />
                  </a>
  
-                 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer" className="bannerIcon">
+                 <a href="https://arxiv.org/search/?searchtype=author&query=Mukhopadhyay%2C+S" target="_blank" rel="noopener noreferrer" className="bannerIcon">
                    <SiArxiv size={40} className="text-[#B31B1B]" />
                  </a>
                </div>
