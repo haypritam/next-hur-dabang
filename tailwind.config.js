@@ -13,7 +13,8 @@ module.exports = {
     extend: {
       fontFamily: {
         mont: ['var(--font-mont)'],
-       
+       signatureFont:["Grey Qo", 'cursive'],
+       titleFont:["EB Garamond", 'serif']
       },
       colors:{
         dark: '#1b1b1b',

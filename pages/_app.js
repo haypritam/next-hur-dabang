@@ -1,28 +1,27 @@
-import '../styles/globals.css'
-
-import { Montserrat } from 'next/font/google'
-import Head from 'next/head'
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
+import '../styles/globals.css';
+import { Montserrat } from 'next/font/google';
+import Head from 'next/head';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: "--font-mont",
-})
+});
 
 export default function App({ Component, pageProps }) {
-  return ( 
+  return (
     <>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/fav.ico' />
       </Head>
       
-      <main className={`${montserrat.variable} font-mont`}>
+      <main className={`${montserrat.variable} font-mont pt-[100px]`}> {/* Adjust the padding-top */}
         <NavBar />
         <Component {...pageProps} />
         <Footer />
       </main>
     </>
-  ) 
+  );
 }

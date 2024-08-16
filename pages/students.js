@@ -15,25 +15,25 @@ const scholar = {
       "name": "Pratik Chowdhury",
       "status": "PhD(Ongoing)",
       "picture": "https://nitdgp.ac.in/uploads/69e7d22e20def0bf547f86e679fb406f.jpeg",
-      "description":"heheheheheehehehheehehhehehehehehhehehehehehehe"
+      "description":"description"
     },
     "student2": {
       "name": "Anil Bikash Chowdhury",
       "status": "PhD (Part Time) (Completed)",
       "picture": "https://nitdgp.ac.in/uploads/0612d2c218361907e5247f2c18e95ac1.jpg",
-      "description":"I dont know you"
+      "description":"description"
     },
     "student3": {
       "name": "Anjan Bandyopadhyay",
       "status": "PhD (Completed)",
       "picture": "https://nitdgp.ac.in/uploads/924ab812a3533469c5f6b283580d49bf.jpg",
-      "description":""
+      "description":"description"
     },
     "student4": {
       "name": "Vikash Kumar Singh",
       "status": "PhD (Completed)",
       "picture": "https://nitdgp.ac.in/uploads/333cdffd13d47680a84dc14836cea48e.jpg",
-      "description":"kumar... vikas kumar"
+      "description":"description"
     },
     "student5": {
       "name": "Naren Debnath",
