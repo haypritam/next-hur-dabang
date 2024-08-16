@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
-
+import Circles from './Circles';
 
 const Details = ({position, company, companyLink, time, address, work}) => {
     const ref = useRef(null);
