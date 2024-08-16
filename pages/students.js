@@ -53,7 +53,6 @@ const scholar = {
   "MTech": {},
   "BTech": {}
 };
-
 export default function Students() {
   const [tabValue, setTabValue] = useState("PhD");
   const [open, setOpen] = useState(false);
@@ -129,7 +128,7 @@ export default function Students() {
                   backgroundColor: '#f5f5f5',
                   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                   '&:hover': {
-                    backgroundColor: '#e0f7fa',
+                    backgroundColor: '#e0f2e9', // Light green shade
                     transform: 'scale(1.02)',
                     transition: 'transform 0.2s',
                   },
