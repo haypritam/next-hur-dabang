@@ -6,9 +6,6 @@ import AnimationT from './components/AnimationT';
 import { SiGooglescholar, SiDblp, SiArxiv } from "react-icons/si";
 import Link from 'next/link';
 
-
-
-
 export default function Home() {
   return (
     <>
@@ -28,9 +25,8 @@ export default function Home() {
              </div>
              <div className="w-1/2 flex flex-col items-center self-center">
                <AnimationT text='Dr. Sajal Mukhopadhyay' className="!text-3xl font-titleFont"/>
-               <h1 className=" font-titleFont text-4xl ">Associate Professor </h1>
-               <h className=" font-titleFont text-xl">sajal[at]cse[dot]nitdgp[dot]ac[dot]in</h>
-               
+               <h1 className=" font-titleFont text-4xl ">Associate Professor</h1>
+               <p className=" font-titleFont text-xl">sajal[at]cse[dot]nitdgp[dot]ac[dot]in</p>
                
                {/* Add the icons below the text animations */}
                <div className="flex gap-6 mt-4">

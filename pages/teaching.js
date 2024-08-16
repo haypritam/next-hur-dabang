@@ -7,14 +7,14 @@ import Head from "next/head";
 export default function Teaching() {
   return (
     <>
-    <Head>
-         <title>Teaching</title>
-         <meta name="description" content="Dr. Sajal Mukhopadhyay NIT Durgapur" />
-       </Head>
+      <Head>
+        <title>Teaching</title>
+        <meta name="description" content="Dr. Sajal Mukhopadhyay NIT Durgapur" />
+      </Head>
       <main className="flex flex-col min-h-screen justify-between w-full items-center">
         <Layoutt className="pt-4 flex-grow">
           <AnimationT text="Teaching" className="font-titleFont" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-[2fr,3fr] gap-80">
             <div className="flex flex-col justify-center">
               <h1 className="mb-4 text-2xl font-bold font-titleFont text-blue-600">Courses taught</h1>
@@ -41,11 +41,11 @@ export default function Teaching() {
 
               <div className="flex items-center justify-start mt-3">
                 <LiaBookSolid style={{ fontSize: '30px', marginRight: '8px' }} />
-                <h7 className="font-titleFont text-2xl">Game Theory and Its Applications</h7>
+                <h6 className="font-titleFont text-2xl">Game Theory and Its Applications</h6>
               </div>
               <div className="flex items-center justify-start mt-3">
                 <LiaBookSolid style={{ fontSize: '30px', marginRight: '8px' }} />
-                <h7 className="font-titleFont text-2xl">Online Algorithms</h7>
+                <h6 className="font-titleFont text-2xl">Online Algorithms</h6>
               </div>
             </div>
           </div>
@@ -54,7 +54,6 @@ export default function Teaching() {
             <div className="mb-4 text-2xl font-bold font-titleFont text-blue-600">Some Materials</div>
           </div>
         </Layoutt>
-
       </main>
     </>
   );

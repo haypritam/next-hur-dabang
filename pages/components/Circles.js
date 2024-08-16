@@ -23,4 +23,4 @@ const Circles = ({reference}) => {
   )
 }
 
-export default Circles
+export default Circles;
